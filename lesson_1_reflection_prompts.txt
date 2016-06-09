@@ -1,0 +1,45 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    If the original file is working, while the modified version is not, it will
+    be helpful to quickly locate exactly how many places are modified between
+    original and modifed one.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    Sometimes programmers might need combination of different code version,
+    allowing to access to all editing history at once will be convinient for
+    developing.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    The pros of one side will becomde the cons of the other side.
+    For auto saved, redundent version will take up many sapce of saved files;
+     while manullly saved increase the risk of file loss due to careless using.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    The Google Docs isn't designed for coding, the main user only focus on one
+    file at a time. On the other hand, programmers usually have to modify multiple
+    files in just one logical change in order to make programs work properly, in
+    the senario, saving multiple files in one commit is critical.
+
+How can you use the commands git log and git diff to view the history of files?
+
+    For git diff, the first file is the newer one, and the second file is the
+    older version.
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    So I can easily revert to the previous working version, without worrying
+    I may mess up the code and unable to recover it.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    I'd like to use Git for my project developing, trying out the version
+    control like a real pro does.

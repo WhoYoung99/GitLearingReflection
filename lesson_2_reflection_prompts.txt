@@ -1,0 +1,63 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+	$ git init  	inside the target folder to initialize a repository locally
+	This will add a .git file to make all git commands available.
+
+	Do so make us able to use git to mange version controls.
+
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+
+	Right after commit, the staging area is identical to the working directory.
+	Any further modification to the file will happen in the working area,
+	 while staging area stay the same until the user commit the change to sync
+	 the two staging.
+
+	Seperating these two stages allow users to keep tracking the progress of
+	 the code but at the same time keep the latest commmit unharmed.
+
+	$ git diff 			will compare the working stage with staging area,
+	$ git diff --staged will comapre the staging area with latest commmit
+
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+
+	Keep track of the progess by using
+	$ git diff
+	$ git diff --staged
+	as long as modification can be considered a logical change, commit it.
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+
+	For testing some special or experimental features,
+	 or for dementrating new features privatly to specific group of people,
+	 or coorporating with other developers simultaneously.
+
+How do the diagrams help you visualize the branch structure?
+
+	To be honest, I sometimes have trouble understanding the branch graph,
+	 especially when I have several branches parallelly....
+
+	$ git log --graph --oneline [master] [otherBranchName]
+	provides a more concise version of graph.
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+	$ git merge [branch1] [branch2]
+	will make a new file contained any new line added/deleted in both branches,
+	if there's a line, modified by both branches and is not exactly the same,
+	then here comes the merge conflict.
+
+	Git will add some debug lines in the conflicting file, to help coders located
+	 the problematic lines and resolve conflict.
+
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges
+manually?
+
+	Auto merge  : Not sure what kind of "auto" here talks about...
+	Manual merge: More verbose, developers have to do more work while it gerentee
+				  a better promise result of merging file.
